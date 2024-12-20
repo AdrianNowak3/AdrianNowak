@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Pole tekstowe do wpisywania nazwy psa -->
+    <EditText
+        android:id="@+id/dogNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wpisz nazwę psa"
+        android:inputType="text" />
+
+    <!-- Przyciski dodawania i wyszukiwania -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj psa"
+            android:enabled="false"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Szukaj"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <!-- Informacja o błędach -->
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text="Błąd"
+        android:layout_marginTop="8dp" />
+
+    <!-- Lista psów -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dogsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

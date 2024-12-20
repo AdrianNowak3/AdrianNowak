@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Ikona psa -->
+    <ImageView
+        android:id="@+id/dogIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_dog_placeholder"
+        android:contentDescription="@string/dog_icon_desc"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Nazwa psa -->
+    <TextView
+        android:id="@+id/dogNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nazwa psa"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <!-- Ikona ulubionych -->
+    <ImageView
+        android:id="@+id/favoriteIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_favorite_border"
+        android:contentDescription="@string/favorite_icon_desc"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Ikona usuwania -->
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="@string/delete_icon_desc" />
+</LinearLayout>

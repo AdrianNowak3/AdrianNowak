@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="dog_icon_desc">Ikona psa</string>
+    <string name="favorite_icon_desc">Ikona ulubionych</string>
+    <string name="delete_icon_desc">Ikona usuwania</string>
+</resources>
